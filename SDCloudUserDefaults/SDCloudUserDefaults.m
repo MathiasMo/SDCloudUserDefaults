@@ -138,7 +138,7 @@ static NSUserDefaults *userDefaults;
                                                                                      NSUbiquitousKeyValueStore* cloud = [NSUbiquitousKeyValueStore defaultStore];
                                                                                      NSArray* changedKeys = [userInfo objectForKey:NSUbiquitousKeyValueStoreChangedKeysKey];
                                                                                      for (NSString* key in changedKeys) {
-                                                                                         [defaults setObject:[cloud objectForKey:key] forKey:key];
+//                                                                                         [defaults setObject:[cloud objectForKey:key] forKey:key];
                                                                                          
                                                                                          [[NSNotificationCenter defaultCenter] postNotificationName:SDCloudValueUpdatedNotification
                                                                                                                                              object:self
